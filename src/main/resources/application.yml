@@ -1,0 +1,19 @@
+server:
+  port: 8180
+  servlet:
+    context-path: /app
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db
+    username: postgres
+    password: root1
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  servlet:
+    multipart:
+      max-request-size: 50MB
+      max-file-size: 50MB
