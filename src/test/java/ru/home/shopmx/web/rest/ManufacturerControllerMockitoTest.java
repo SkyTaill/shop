@@ -33,6 +33,8 @@ class ManufacturerControllerMockitoTest {
 
         manufacturers.add( ManufacturerDto.builder().manufacturerId(1L).name("Apple").build());
         manufacturers.add( ManufacturerDto.builder().manufacturerId(2L).name("Google").build());
+
+        //заменяет что будет возвращать
         given(manufacturerService.findAll()).willReturn(manufacturers);
 
     }
@@ -48,6 +50,7 @@ class ManufacturerControllerMockitoTest {
         assertAll(
                 ()->assertEquals(2,manufacturerList.size(),"size must be 2"),
                 ()->assertEquals("Apple",manufacturerList.get(0).getName())
+
         );
     }
 }
