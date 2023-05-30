@@ -16,13 +16,13 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.BDDMockito.then;
 
 @ExtendWith(MockitoExtension.class)
-class ManufacturerServiceMockitoTest {
+class ManufacturerServiceMockitoMVCTest {
     @Mock
     ManufacturerDao manufacturerDao;
 
@@ -77,8 +77,8 @@ class ManufacturerServiceMockitoTest {
 
         given(manufacturerDao.save(any(Manufacturer.class))).willReturn(manufacturerFromDao);
         //подменяем метод без которого не работает метод так как не развернут контекст спринга на хардкоженный
-        given(manufacturerMapper.toManufacturer(any())).will(new ToManufacturer());
-        given(manufacturerMapper.toManufacturerDto(any())).will(new ToManufacturerDto());
+        given(manufacturerMapper.toManufacturer(any())).will(new ToManufacturer1());
+        given(manufacturerMapper.toManufacturerDto(any())).will(new ToManufacturerDto1());
 
 
 
@@ -93,7 +93,7 @@ class ManufacturerServiceMockitoTest {
 
 }
 
-class ToManufacturer implements Answer<Manufacturer> {
+class ToManufacturer1 implements Answer<Manufacturer> {
 
     @Override
     public Manufacturer answer(InvocationOnMock invocation) throws Throwable {
@@ -111,7 +111,7 @@ class ToManufacturer implements Answer<Manufacturer> {
     }
 }
 
-class ToManufacturerDto implements Answer<ManufacturerDto> {
+class ToManufacturerDto1 implements Answer<ManufacturerDto> {
 
     @Override
     public ManufacturerDto answer(InvocationOnMock invocation) throws Throwable {
