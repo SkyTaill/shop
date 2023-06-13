@@ -26,3 +26,9 @@ spring:
 server:
   port: ${PORT:8888}
 
+encrypt:
+  key-store:
+    alias: ${ENCRYPT_KEYSTORE_ALIAS:shopmart}
+    location: ${ENCRYPT_KEYSTORE_LOCATION:classpath:///server.jks}
+    password: ${ENCRYPT_KEYSTORE_PASSWORD:123456}
+    secret: changeme
