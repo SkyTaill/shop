@@ -1,0 +1,19 @@
+
+spring:
+  application:
+    name:${SPRING_APPLICATION_NAME:config-server}
+#encrypt:
+#  key-store:
+#    alias: ${ENCRYPT_KEYSTORE_ALIAS:shopmart}
+#    location: ${ENCRYPT_KEYSTORE_LOCATION:classpath:///server.jks}
+#    password: ${ENCRYPT_KEYSTORE_PASSWORD:123456}
+#    secret: changeme
+
+  # keytool -genkeypair -alias shopmart -keyalg RSA -dname "CN=Web Server,OU=Unit,O=Goggle,L=Moscow,C=Russia"  -keypass 123456 -keystore server.jks -storepass 123456
+
+
+
+  #keytool -genkeypair -alias myApiTutorialKey -keyalg RSA -dname "CN=Mark Dsouza,OU=MyApiDev,O=markbdsouza.com,L=Bangalore,S=KA,C=IN" -keypass a1b2c3d4 -keystore myApiTutorialKey.jks -storepass a1b2c3d4
+
+
+  #keytool -genkeypair -alias shopmart -keyalg RSA   -dname "CN=Web Server,OU=Unit,O=Organization,L=City,S=State,C=US"  -keypass changeme -keystore server.jks -storepass 123456

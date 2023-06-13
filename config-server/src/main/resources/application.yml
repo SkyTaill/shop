@@ -1,0 +1,28 @@
+# localhost:8888/{profile}/{application}/{label}
+# localhost:8888/{application}-{profile}.yml
+# localhost:8888/{label}/{application}-{profile}.yml
+
+# localhost:8888/dev/application-shop-mark/master
+spring:
+#  security:
+#    user:
+#      name: ${SECURITY_USER:pass}
+#      password: ${SECURITY_PASS:pass}
+      #  url pass:pass@localhost:8888/dev/application-shop-mark/master
+  cloud:
+    config:
+      server:
+        git:
+          uri: ${GIT_URI:file:///Users/Максим/Desktop/server-setting-mart}
+          clone-on-start: true
+#          username: ${GIT_USERNAME:pass}
+#          password: ${GIT_PASSWORD:pass}
+        bootstrap: true
+        default-label: master
+      enabled: true
+
+  application:
+    name: Config-Server
+server:
+  port: ${PORT:8888}
+
