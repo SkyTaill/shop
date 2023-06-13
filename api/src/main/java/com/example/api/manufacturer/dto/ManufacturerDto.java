@@ -1,4 +1,4 @@
-package ru.home.shopmx.web.dto;
+package com.example.api.manufacturer.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;

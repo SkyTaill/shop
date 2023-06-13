@@ -7,7 +7,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import ru.home.shopmx.service.ManufacturerService;
-import ru.home.shopmx.web.dto.ManufacturerDto;
 
 
 import java.net.URI;

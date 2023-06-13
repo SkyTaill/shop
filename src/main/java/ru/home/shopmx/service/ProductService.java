@@ -12,8 +12,6 @@ import org.springframework.transaction.annotation.Transactional;
 import ru.home.shopmx.dao.ManufacturerDao;
 import ru.home.shopmx.dao.ProductDao;
 import ru.home.shopmx.entity.Product;
-import ru.home.shopmx.entity.enums.Status;
-import ru.home.shopmx.web.dto.ProductDto;
 import ru.home.shopmx.web.dto.mapper.ProductMapper;
 
 

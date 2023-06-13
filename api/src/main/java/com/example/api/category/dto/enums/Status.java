@@ -1,4 +1,4 @@
-package ru.home.shopmx.entity.enums;
+package com.example.api.category.dto.enums;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

@@ -7,7 +7,6 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import ru.home.shopmx.service.ManufacturerService;
-import ru.home.shopmx.web.dto.ManufacturerDto;
 
 import java.util.ArrayList;
 import java.util.List;

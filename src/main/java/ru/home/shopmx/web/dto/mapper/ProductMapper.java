@@ -6,7 +6,6 @@ import org.mapstruct.Mapper;
 import ru.home.shopmx.dao.ManufacturerDao;
 import ru.home.shopmx.entity.Manufacturer;
 import ru.home.shopmx.entity.Product;
-import ru.home.shopmx.web.dto.ProductDto;
 
 import java.util.NoSuchElementException;
 

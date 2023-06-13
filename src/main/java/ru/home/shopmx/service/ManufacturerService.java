@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.home.shopmx.dao.ManufacturerDao;
 import ru.home.shopmx.entity.Manufacturer;
-import ru.home.shopmx.web.dto.ManufacturerDto;
 import ru.home.shopmx.web.dto.mapper.ManufacturerMapper;
 
 

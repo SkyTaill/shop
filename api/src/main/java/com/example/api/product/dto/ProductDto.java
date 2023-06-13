@@ -1,10 +1,10 @@
-package ru.home.shopmx.web.dto;
+package com.example.api.product.dto;
 
+import com.example.api.category.dto.enums.Status;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import jakarta.validation.constraints.*;
 import lombok.*;
-import ru.home.shopmx.entity.enums.Status;
 
-import javax.validation.constraints.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
