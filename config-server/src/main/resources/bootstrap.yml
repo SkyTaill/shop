@@ -2,12 +2,12 @@
 spring:
   application:
     name:${SPRING_APPLICATION_NAME:config-server}
-encrypt:
-  key-store:
-    alias: ${ENCRYPT_KEYSTORE_ALIAS:shopmart}
-    location: ${ENCRYPT_KEYSTORE_LOCATION:classpath:///server.jks}
-    password: ${ENCRYPT_KEYSTORE_PASSWORD:123456}
-    secret: changeme
+#encrypt:
+#  key-store:
+#    alias: ${ENCRYPT_KEYSTORE_ALIAS:shopmart}
+#    location: ${ENCRYPT_KEYSTORE_LOCATION:classpath:///server.jks}
+#    password: ${ENCRYPT_KEYSTORE_PASSWORD:123456}
+#    secret: changeme
 
   # keytool -genkeypair -alias shopmart -keyalg RSA -dname "CN=Web Server,OU=Unit,O=Goggle,L=Moscow,C=Russia"  -keypass 123456 -keystore server.jks -storepass 123456
 

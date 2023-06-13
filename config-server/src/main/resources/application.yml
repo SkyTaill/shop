@@ -4,10 +4,10 @@
 
 # localhost:8888/dev/application-shop-mark/master
 spring:
-  security:
-    user:
-      name: ${SECURITY_USER:pass}
-      password: ${SECURITY_PASS:pass}
+#  security:
+#    user:
+#      name: ${SECURITY_USER:pass}
+#      password: ${SECURITY_PASS:pass}
       #  url pass:pass@localhost:8888/dev/application-shop-mark/master
   cloud:
     config:
@@ -15,8 +15,8 @@ spring:
         git:
           uri: ${GIT_URI:file:///Users/Максим/Desktop/server-setting-mart}
           clone-on-start: true
-          username: ${GIT_USERNAME:max}
-          password: ${GIT_PASSWORD:max}
+#          username: ${GIT_USERNAME:pass}
+#          password: ${GIT_PASSWORD:pass}
         bootstrap: true
         default-label: master
       enabled: true
