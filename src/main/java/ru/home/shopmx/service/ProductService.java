@@ -1,5 +1,7 @@
 package ru.home.shopmx.service;
 
+import com.example.api.category.dto.enums.Status;
+import com.example.api.product.dto.ProductDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.dao.EmptyResultDataAccessException;

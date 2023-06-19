@@ -1,5 +1,6 @@
 package ru.home.shopmx.dao;
 
+import com.example.api.category.dto.enums.Status;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;

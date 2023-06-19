@@ -48,6 +48,7 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok-mapstruct-binding:0.2.0'
     annotationProcessor 'org.mapstruct:mapstruct-processor:1.4.2.Final'
 
+    implementation files("lib/api-0.0.1-mart-plain.jar")
 }
 
 dependencyManagement {

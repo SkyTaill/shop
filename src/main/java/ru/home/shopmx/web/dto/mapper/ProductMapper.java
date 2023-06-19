@@ -1,5 +1,6 @@
 package ru.home.shopmx.web.dto.mapper;
 
+import com.example.api.product.dto.ProductDto;
 import org.mapstruct.Context;
 import org.mapstruct.Mapper;
 

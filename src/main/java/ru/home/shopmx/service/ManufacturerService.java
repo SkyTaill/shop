@@ -1,5 +1,6 @@
 package ru.home.shopmx.service;
 
+import com.example.api.manufacturer.dto.ManufacturerDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.dao.EmptyResultDataAccessException;

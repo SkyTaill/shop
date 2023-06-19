@@ -1,5 +1,6 @@
 package ru.home.shopmx.web.rest;
 
+import com.example.api.product.dto.ProductDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
