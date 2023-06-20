@@ -13,19 +13,20 @@ import java.util.List;
 
 @FeignClient(url="http//localhost:8080/internal/api/v1/manufacturer",name="ManufacturerGateway")
 public interface ManufacturerGateway {
+
     @GetMapping
-    public List<ManufacturerDto> getManufacturerList();
+    List<ManufacturerDto> getManufacturerList();
 
     @GetMapping("/{manufacturerId}")
-    public ResponseEntity<ManufacturerDto> getManufacturer(@PathVariable("manufacturerId") Long id) ;
+    ResponseEntity<ManufacturerDto> getManufacturer(@PathVariable("manufacturerId") Long id);
 
     @PostMapping
-    public ResponseEntity<?> handlePost(@Validated @RequestBody ManufacturerDto manufacturerDto);
+    ResponseEntity<ManufacturerDto> handlePost(@Validated @RequestBody ManufacturerDto manufacturerDto);
 
     @PutMapping("/{manufacturerId}")
-    public ResponseEntity<ManufacturerDto> handleUpdate(@PathVariable("manufacturerId") Long id, @Validated @RequestBody ManufacturerDto manufacturerDto) ;
+    ResponseEntity<ManufacturerDto> handleUpdate(@PathVariable("manufacturerId") Long id,
+                                                 @Validated @RequestBody ManufacturerDto manufacturerDto);
 
     @DeleteMapping("/{manufacturerId}")
-    public void deleteById(@PathVariable("manufacturerId") Long id);
-
+    void deleteById(@PathVariable("manufacturerId") Long id);
 }
