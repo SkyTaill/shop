@@ -1,5 +1,6 @@
 package ru.home.shopmx.service;
 
+import com.example.api.manufacturer.dto.ManufacturerDto;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
