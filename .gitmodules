@@ -1,0 +1,3 @@
+[submodule "server-setting-mart"]
+	path = server-setting-mart
+	url = https://github.com/SkyTaill/server-setting-mart.git

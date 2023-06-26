@@ -19,7 +19,7 @@ repositories {
 }
 
 ext {
-    set('springCloudVersion', "2022.0.3")
+    set('springCloudVersion', "2022.0.1")
 }
 
 dependencies {
@@ -33,7 +33,7 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
-    implementation files("../lib/api-0.0.3-mart-plain.jar")
+    implementation files("../lib/api-0.0.6-mart-plain.jar")
 
 }
 

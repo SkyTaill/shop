@@ -2,7 +2,7 @@
 
 spring:
   application:
-    name: ${SPRING_APPLICATION_NAME:shop-mart}
+    name: ${SPRING_APPLICATION_NAME:ex-api}
   profiles:
 
     active: ${SPRING_PROFILES_INCLUDE:application-external-api}

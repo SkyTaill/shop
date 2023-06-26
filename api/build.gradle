@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.example'
-version = '0.0.4-mart'
+version = '0.0.6-mart'
 sourceCompatibility = '17'
 
 configurations {
@@ -19,7 +19,7 @@ repositories {
 }
 
 ext {
-    set('springCloudVersion', "2022.0.3")
+    set('springCloudVersion', "2021.0.1")
 }
 
 dependencies {
